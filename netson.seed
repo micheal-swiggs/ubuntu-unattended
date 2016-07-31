@@ -10,7 +10,7 @@ d-i pkgsel/install-language-support                         boolean     true
 d-i console-setup/ask_detect                                boolean     false
 d-i keyboard-configuration/modelcode                        string      pc105
 d-i keyboard-configuration/layoutcode                       string      us
-d-i keyboard-configuration/variantcode                      string      intl
+d-i keyboard-configuration/variantcode                      string      dvp
 d-i keyboard-configuration/xkb-keymap                       select      us(intl)
 d-i debconf/language                                        string      en_US:en
 
@@ -76,8 +76,8 @@ d-i grub-installer/only_debian                              boolean     true
 d-i grub-installer/with_other_os                            boolean     true
 
 # finish installation
-d-i finish-install/reboot_in_progress                       note
-d-i finish-install/keep-consoles                            boolean     false
-d-i cdrom-detect/eject                                      boolean     true
-d-i debian-installer/exit/halt                              boolean     false
-d-i debian-installer/exit/poweroff                          boolean     false
+#d-i finish-install/reboot_in_progress                       note
+#d-i finish-install/keep-consoles                            boolean     false
+#d-i cdrom-detect/eject                                      boolean     true
+#d-i debian-installer/exit/halt                              boolean     false
+#d-i debian-installer/exit/poweroff                          boolean     false
