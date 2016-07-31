@@ -1,3 +1,9 @@
+
+# Running
+
+cp ubuntu-14.04.4-server-amd64-unattended.iso /tmp/.
+sudo ./create-unattended-iso.sh
+
 # Unattended Ubuntu ISO Maker
 
 This simple script will create an unattended Ubuntu ISO from start to finish. It will ask you a few questions once, and embed your answers into a remastered ISO file for you to use over and over again.
